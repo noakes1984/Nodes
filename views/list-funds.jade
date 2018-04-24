@@ -1,0 +1,14 @@
+each output in funds.outputs
+  table.table-borderless(style='margin-bottom:1rem')
+    tr
+      th(scope='row') Address
+      td #{output.address}
+    tr
+      th(scope='row') Value
+      td #{output.value} (#{output.value / 100000000} BTC) ($#{output.value / 100000000 * 8327})
+    tr
+      th(scope='row') Total
+      td #{output.value}
+    tr
+      th(scope='row') Status
+      td #{output.status}

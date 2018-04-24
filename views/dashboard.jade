@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container
+    .row
+      .col-sm
+        .card
+          .card-body
+            h5.card-title Node info
+            h6.card-subtitle.mb-2.text-muted #{nodeInfo.id}
+            button.btn.btn-primary.btn-list-funds List funds
+            button.btn.btn-primary.btn-list-peers List peers
+            button.btn.btn-primary.btn-get-peers Get peers
+            .results
+      .col-sm
+        button.btn.btn-primary Get Node info

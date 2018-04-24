@@ -1,0 +1,9 @@
+each peer in peers.peers
+  table.table-borderless(style='margin-bottom:1rem')
+    tr
+      th(scope='row') Alias
+      td #{peer.alias}
+    if peer.channels
+      tr
+        th(scope='row')
+        td= peer.channels[0]
